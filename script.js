@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:3000/api/items";
-const API_CREATOR = "http://localhost:3000/api/jimenez";
+const API_URL = "http://localhost:8000/api/items";
+const API_CREATOR = "http://localhost:8000/api/jimenez";
 
 
 const tabla = document.getElementById("tabla");
