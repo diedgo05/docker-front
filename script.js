@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:8000/api/items";
-const API_CREATOR = "http://localhost:8000/api/jimenez";
+const API_URL = "http://localhost:5000/api/items";
+// const API_CREATOR = "http://localhost:5000/api/jimenez";
 
 
 const tabla = document.getElementById("tabla");
@@ -83,18 +83,18 @@ function renderTabla(data) {
   );
 }
 
-const btnCreador = document.getElementById("btn-creador");
-const infoCreador = document.getElementById("info-creador");
+// const btnCreador = document.getElementById("btn-creador");
+// const infoCreador = document.getElementById("info-creador");
 
-btnCreador.addEventListener("click", async () => {
-  try {
-    const res = await fetch(API_CREATOR);
-    const data = await res.json();
-    infoCreador.textContent = `Creador: ${data.nombre_completo}`;
-  } catch (error) {
-    infoCreador.textContent = "Error al obtener la información del creador";
-  }
-});
+// btnCreador.addEventListener("click", async () => {
+//   try {
+//     const res = await fetch(API_CREATOR);
+//     const data = await res.json();
+//     infoCreador.textContent = `Creador: ${data.nombre_completo}`;
+//   } catch (error) {
+//     infoCreador.textContent = "Error al obtener la información del creador";
+//   }
+// });
 
 btnCrear.addEventListener("click", crearElemento);
 
